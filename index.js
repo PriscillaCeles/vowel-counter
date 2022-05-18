@@ -1,22 +1,30 @@
-let phrase = 'estou adorando estudar frontend no hall to code'
-let vowels = 0
+const $inputPhrase = document.querySelector('.input')
+const $displayResult = document.querySelector('.display-result')
+const $button= document.querySelector('.button')
+
+const vowels = 'aáàâãAÀÁÂÃeéêEÉÊiíIÍoóôõOÓÔÕuúUÚ'
+
+
+let vowelsCount = 0
+
 
 
 function vowelCounter () {
+  let phrase = $inputPhrase.value
   for(let i= 0; i < phrase.length; i++) {
-    
-    if(
-      phrase[i] == 'a' ||
-      phrase[i] == 'e' ||
-      phrase[i] == 'i' ||
-      phrase[i] == 'o' ||
-      phrase[i] == 'u'
-      ) {
-        vowels++
+    for(let z= 0; z < vowels.length; z++){
+      if(phrase[i] === vowels[z]){
+        vowelsCount++
       }
+    }
   }
+  return vowelsCount
 }
 
-vowelCounter()
+$button.addEventListener('click', function(){
+  vowelCounter()
+  $displayResult.textContent = vowelsCount
+  vowelsCount = 0
+})
 
-console.log(vowels)
+
