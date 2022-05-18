@@ -57,7 +57,7 @@
   color: #fcfcfc;
   font-size: 20px;
   font-weight: 600;
-  background: linear-gradient(to right,  #ba64c2, #c46cc3, #cd74c4, #d57cc5, #dd7fbd, #e384b6, #e789b0, #e98fab);
+  background-color: #d57cc5;
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #727272;
@@ -65,6 +65,7 @@
 
 .button:hover {
   cursor: pointer;
+  background-color: #d57cc5c7
 }
 
 .button:active {
