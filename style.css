@@ -1,16 +1,16 @@
 * {
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 .title {
-  font-family: 'Baloo Bhai 2', cursive;
+  font-family: "Baloo Bhai 2", cursive;
   padding: 20px 50px;
   font-size: 48px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
 }
 
@@ -23,7 +23,13 @@
   gap: 20px;
 }
 
-.box{
+.box {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.input-box {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -32,7 +38,7 @@
 .input-title {
   color: #4bc0c8;
   font-weight: 600;
-  font-size: 20PX;
+  font-size: 20px;
 }
 
 .input {
@@ -53,6 +59,7 @@
 }
 
 .button {
+  height: 50px;
   padding: 13px;
   color: #fcfcfc;
   font-size: 20px;
@@ -65,7 +72,7 @@
 
 .button:hover {
   cursor: pointer;
-  background-color: #d57cc5c7
+  background-color: #d57cc5c7;
 }
 
 .button:active {
@@ -73,7 +80,7 @@
 }
 
 @keyframes click {
-  to{
+  to {
     transform: translateY(2px) translateX(2px);
     box-shadow: none;
   }
@@ -93,7 +100,4 @@
   font-size: 30px;
   font-weight: 600;
   background: linear-gradient(to right, #f1bf9e62, #ff7b007e);
-
 }
-
-
